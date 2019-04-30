@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.4)
+add_compile_options(-std=c++11)
+add_compile_options(-g)
+add_compile_options(-Wall)
+project( HeliPadDetector )
+find_package( OpenCV REQUIRED )
+add_executable( HeliPadDetector main.cpp )
+target_link_libraries( HeliPadDetector ${OpenCV_LIBS} )
